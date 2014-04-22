@@ -106,8 +106,8 @@ All of these are valid:
 
 	// -- function argument which does not accept falsy values --
 	function showString(nonEmptyString) {
-		optionalNonEmptyString = optionalNonEmptyString || 'default value';
-		console.log(number);
+		nonEmptyString = nonEmptyString || 'default value';
+		console.log(nonEmptyString);
 	}
 
 	showString();          // 'default value'
