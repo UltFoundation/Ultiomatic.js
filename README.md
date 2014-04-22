@@ -117,7 +117,7 @@ All of these are valid:
 
 	// nonEmptyString is theoretically documented as a non-empty string argument,
 	// hence this falls under undefined behavior:
-	showString('');        // 'hello'
+	showString('');        // 'default value'
 
 
 	// -- function argument which does accept falsy values --
