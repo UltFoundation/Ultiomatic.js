@@ -97,7 +97,7 @@ All of these are valid:
 	if (zombiesAreComing) return;
 	```
 
-- Checking if an identifier or object property was given a value: use implicit boolean conversion whenever possible. Use `== null` when a [falsy value](http://es5.github.io/#x9.2) is acceptable, this assumes `null` and `undefined` the same as "no value given". Only use `typeof identifier === 'undefined'` as a last resort, due to is overly verbose form.
+- Checking if an identifier or object property was given a value: use implicit boolean conversion whenever possible. Use `== null` when a [falsy value](http://es5.github.io/#x9.2) is acceptable, this assumes `null` and `undefined` the same as "no value given". Only use `typeof identifier === 'undefined'` as a last resort, due to its overly verbose form.
 
 	```js
 	// -- simple feature checking --
