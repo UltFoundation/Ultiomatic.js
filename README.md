@@ -167,10 +167,10 @@ All of these are valid:
 	};
 	```
 
-## Conclusion
+## Closing words
 
 All code should look like a single **conscious** person wrote it. A person who can take good style decisions depending on context, be it adding inner whitespace to some parentheses or deciding the placement of a comment.
 
-This style guide will always be a work in progress, in order to keep up with the consistency needs of the projects which adopt it. Although the focus of this style guide is to be the definitive guide for Ult Foundation's projects, this guide is distributed under MIT licensing, hence feel free to adopt it in your own projects as well.
+This style guide is a live document, it will continually improve in order to keep up with the consistency needs of the projects which adopt it. Although the focus of this style guide is to be the definitive guide for Ult Foundation's projects, this guide is distributed under MIT licensing, hence feel free to adopt it in your own projects as well.
 
 Got any doubts? Found some part of the guide unclear? Want to discuss the decisions' reasoning or add to this guide? Just [open an issue](https://github.com/UltFoundation/UltStyle.js/issues/new). `:)`
