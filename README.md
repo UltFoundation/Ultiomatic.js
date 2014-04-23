@@ -10,7 +10,7 @@ This style guide is largely based on [Idiomatic.js](https://github.com/rwaldron/
 
 Achieve a decent level of coding style consistency in [@UltFoundation](https://github.com/UltFoundation) and [@UltCombo](https://github.com/UltCombo)'s projects, serving as a simple style guide for contributors.
 
-Consistency is very important, but it shouldn't get in the way of development. Hence, this style guide will be relatively short and more permissive than Idiomatic.js.
+Consistency is very important, but it shouldn't get in the way of development. Hence, this style guide will slightly more permissive and practical than Idiomatic.js.
 
 ## Editor configs
 
@@ -52,7 +52,7 @@ Virtually all of [Idiomatic.js](https://github.com/rwaldron/idiomatic.js) princi
 	```
 
 - `if` statements without curly braces are allowed. In this case, the conditional statement should start in the same line as the `if` statement's closing parethensis. This syntax is recommended for short conditional `throw`/`return` statements.<br>
-Multi-line conditions are allowed, in this case logical operators (`&&`, `||`, `?`, `:`) should appear in the beginning of the line (in order to reduce commit noise when the condition is extended).<br>
+Multiline conditions are allowed, in this case logical operators (`&&`, `||`, `?`, `:`) should appear in the beginning of the line (in order to reduce commit noise when the condition is extended).<br>
 All of these are valid:
 
 	```js
@@ -156,6 +156,16 @@ All of these are valid:
 	```
 
 - Equality comparison: must use strict equality comparison (`===` and `!==`). The only notable exception to this rule is `== null`, which can be used to check whether a value is `null`/`undefined`.
+
+- Trailing commas in multiline objects and arrays are allowed and preferred in projects targeted at ES5-compliant environments.
+
+	```js
+	var obj = {
+		a: 1,
+		b: 2,
+		// `c: 3,` may then be added and only a +1 line commit diff will be generated
+	};
+	```
 
 ## Conclusion
 
