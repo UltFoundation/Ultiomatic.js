@@ -51,7 +51,7 @@ Virtually all of [Idiomatic.js](https://github.com/rwaldron/idiomatic.js) princi
 	}
 	```
 
-- `if` statements without curly braces are allowed. This is recommended for short conditional `throw`/`return` statements. In this case, the conditional statement should start in the same line as the `if` statement's closing parethensis.<br>
+- `if` statements without curly braces are allowed. In this case, the conditional statement should start in the same line as the `if` statement's closing parethensis. This syntax is recommended for short conditional `throw`/`return` statements.<br>
 Multi-line conditions are allowed, in this case logical operators (`&&`, `||`, `?`, `:`) should appear in the beginning of the line (in order to reduce commit noise when the condition is extended).<br>
 All of these are valid:
 
