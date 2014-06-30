@@ -6,7 +6,7 @@ Clearly describe the issue including steps to reproduce when it is a bug. See [S
 
 ## Making pull requests
 
-If you are going to edit or create JavaScript files, please follow the [UltStyle.js guidelines](https://github.com/UltFoundation/UltStyle.js/blob/master/README.md).
+If you are going to edit or create JavaScript files, please follow the [Ultiomatic.js guidelines](https://github.com/UltFoundation/Ultiomatic.js/blob/master/README.md).
 
 Fork the repository you want to contribute to, clone it locally and create a branch for your proposed bug fix or new feature. Avoid working directly on the master branch.
 

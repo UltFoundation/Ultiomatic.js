@@ -1,4 +1,4 @@
-UltStyle.js
+Ultiomatic.js
 ===========
 
 Ult Foundation's simple &amp; effective JavaScript coding style guidelines.
@@ -31,7 +31,7 @@ These are basic configurations which should be handled at IDE/text editor level.
 Or, `cd` into the desired repository and run the command without the `--global` option if you don't want to change your global Git settings.<br>
 **Note:** having `core.autocrfl` set to `true` in Windows platforms is also acceptable in most projects, but `input` is preferred over `true` so that development environments have consistent line endings independent of the platform.
 
-An [EditorConfig](http://editorconfig.org/) file with these settings is available [here](https://github.com/UltFoundation/UltStyle.js/blob/master/config_files/.editorconfig). Make sure your Git client's `autocrlf` setting is set to a suitable value for the projects being worked on.
+An [EditorConfig](http://editorconfig.org/) file with these settings is available [here](https://github.com/UltFoundation/Ultiomatic.js/blob/master/config_files/.editorconfig). Make sure your Git client's `autocrlf` setting is set to a suitable value for the projects being worked on.
 
 ## Syntax
 
@@ -173,4 +173,4 @@ All code should look like a single **conscious** person wrote it. A person who c
 
 This style guide is a live document, it will continually improve in order to keep up with the consistency needs of the projects which adopt it. Although the focus of this style guide is to be the definitive guide for Ult Foundation's projects, this guide is distributed under MIT licensing, hence feel free to adopt it in your own projects as well.
 
-Got any doubts? Found some part of the guide unclear? Want to discuss the decisions' reasoning or add to this guide? Just [open an issue](https://github.com/UltFoundation/UltStyle.js/issues/new). `:)`
+Got any doubts? Found some part of the guide unclear? Want to discuss the decisions' reasoning or add to this guide? Just [open an issue](https://github.com/UltFoundation/Ultiomatic.js/issues/new). `:)`
