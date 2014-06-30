@@ -3,7 +3,7 @@ Ultiomatic.js
 
 Ult Foundation's simple &amp; effective JavaScript coding style guidelines.
 
-This style guide is largely based on [Idiomatic.js](https://github.com/rwaldron/idiomatic.js/#idiomatic-style-manifesto) and most if not all of its rules apply, except otherwise explicitly mentioned. Go read it if you haven't already. `:)`
+This style guide is largely based on [Idiomatic.js](https://github.com/rwaldron/idiomatic.js/#idiomatic-style-manifesto) and most if not all of its rules apply, except otherwise explicitly stated. Go read it if you haven't already. `:)`
 
 
 ## Purpose
@@ -21,7 +21,7 @@ These are basic configurations which should be handled at IDE/text editor level.
 - Indent style: **tab**
 	- [**Tabs for indentation, spaces for alignment.**](http://www.emacswiki.org/SmartTabs) See also: [Why tabs are clearly superior](http://lea.verou.me/2012/01/why-tabs-are-clearly-superior/).
 - **Trim trailing whitespace**
-	- [**TRAILING WHITESPACE IS EVIL.**](http://codeimpossible.com/2012/04/02/Trailing-whitespace-is-evil-Don-t-commit-evil-into-your-repo-/) See also: [Why is trailing whitespace a big deal? - Programmers.SE](http://programmers.stackexchange.com/q/121555/91517). There are countless resources about this if you want to search.
+	- [**TRAILING WHITESPACE IS EVIL.**](http://codeimpossible.com/2012/04/02/Trailing-whitespace-is-evil-Don-t-commit-evil-into-your-repo-/) See also: [Why is trailing whitespace a big deal? - Programmers.SE](http://programmers.stackexchange.com/q/121555/91517).
 	- **Note:** trailing whitespace is meaningful in Markdown, however developers should prefer paragraph breaks over line breaks, and use explicit `<br>`s when line breaks are absolutely necessary. Visible markup makes the intent much more clear than pesky trailing whitespace.
 - **Ensure newline at end of file**
 	- Avoids the "No newline at end of file" Git warning when viewing diffs. Minified files are an exception to this rule.
@@ -70,7 +70,7 @@ All of these are valid:
 	) throw 'Can I haz jQueries?';
 	```
 
-- Prefer single quotes (apostrophes) as string delimiters. Double quotes may be used when the string contains single quotes.
+- Prefer single quotes (apostrophes) as string delimiters. Double quotes may be used to avoid escaping single quotes.
 
 	```js
 	console.log(
@@ -89,15 +89,13 @@ All of these are valid:
 	// run for your lives
 	if (zombiesAreComing) return;
 
-	/* Run for your lives
-	 * blah, yada
-	 * yada yada bleh.
-	 * Lorem ipsum is too mainstream.
+	/* Run for your lives,
+	 * avoiding any life threatening hazards.
 	 */
 	if (zombiesAreComing) return;
 	```
 
-- Checking if an identifier or object property was given a value: use implicit boolean conversion whenever possible. Use `== null` when a [falsy value](http://es5.github.io/#x9.2) is acceptable, this assumes `null` and `undefined` the same as "no value given". Only use `typeof identifier === 'undefined'` as a last resort, due to its overly verbose form.
+- Checking if an identifier or object property was given a value: use implicit boolean conversion whenever possible. Use `== null` when a [falsy value](http://es5.github.io/#x9.2) is acceptable, this considers `null` and `undefined` the same as "no value given". Only use `typeof identifier === 'undefined'` as a last resort, due to its overly verbose form.
 
 	```js
 	// -- simple feature checking --
@@ -157,7 +155,7 @@ All of these are valid:
 
 - Equality comparison: must use strict equality comparison (`===` and `!==`). The only notable exception to this rule is `== null`, which can be used to check whether a value is `null`/`undefined`.
 
-- Trailing commas in multiline objects and arrays are allowed and preferred in projects targeted at ES5-compliant environments.
+- Trailing commas in multiline objects and arrays are allowed and preferred in projects targeting ES5-compliant environments.
 
 	```js
 	var obj = {
