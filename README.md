@@ -99,7 +99,7 @@ All of these are valid:
 
 	```js
 	// -- simple feature checking --
-	if (!window.webSockets) throw 'Browser does not support webSockets';
+	if (!window.webSocket) throw 'Browser does not support webSockets';
 
 
 	// -- function argument which does not accept falsy values --
